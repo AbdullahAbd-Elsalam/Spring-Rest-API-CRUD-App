@@ -2,7 +2,8 @@
 [Active] REST web service using Spring Rest, Spring MVC , Hibernate and Maven. 
 
  
-+ This project is a Spring-based Web Service that provides CRUD (Create, Read, Update, Delete) operations for managing products. It utilizes Spring REST, Spring MVC, and Hibernate for handling HTTP requests, business logic, and database operations, respectively.
++This project is a Spring-based Web Service that implements CRUD (Create, Read, Update, Delete) operations for managing products. It leverages Spring REST, Spring MVC, and Hibernate to handle HTTP requests,
+ business logic, and database operations, respectively. Additionally, a global Exception Handler is employed to manage all API data.
   
 
 ## Requeriments
@@ -63,8 +64,7 @@ datasource.password = 1234
 ```
 
 **4. Build and run the app using Maven**
- 
-+ The app will start running at <http://localhost:8080>.
+   
 + The REST service is running at <http://localhost:8080/>.
 
 
@@ -81,8 +81,8 @@ datasource.password = 1234
 ![GitHub Logo](/images/addProduct.png) 
 
 ### Read (View)
-2. Retrieving all products using GET /products/{productId} API
-+ localhost:8080/api/products/{productId}
+2. Retrieving all products using GET /products/productDetails/id=17 API
++ localhost:8080/products/{productId}
 ![GitHub Logo](/images/getAllProduct.png)
 
 ### Update  
@@ -92,7 +92,7 @@ datasource.password = 1234
 
 ### Delete  
 4. Deleting a product using DELETE products/{personId} API
-+ localhost:8080/api/products/{productId}
++ localhost:8080/products/{productId}
 ![GitHub Logo](/images/deleteProduct.png)
 
 ## IDE
